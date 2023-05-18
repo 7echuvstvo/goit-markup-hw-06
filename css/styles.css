@@ -571,8 +571,12 @@ p {
     background: none;
     border-radius: 4px;
     max-width: 264px;
+    color: #FFFFFF;
+}
 
-
+.footer-input::placeholder {
+    color: #FFFFFF;
+    font-size: 12px;
 }
 
 .footer-email {
@@ -583,8 +587,12 @@ p {
 }
 
 .btn-footer-submit {
+    position: relative;
     padding: 10px 24px;
     border: none;
+    width: 164px;
+    font-size: 16px;
+    text-align: left;
     background: #4D5AE5;
     border-radius: 4px;
     color: #FFFFFF;
@@ -592,6 +600,9 @@ p {
 }
 
 .submit-icon {
+    position: absolute;
+    top: 7px;
+    right: 24px;
     fill: #FFFFFF;
 }
 
