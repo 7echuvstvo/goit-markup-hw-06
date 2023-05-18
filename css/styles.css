@@ -784,6 +784,11 @@ p {
     min-width: 169px;
 }
 
+.btn-modal-submit:hover,
+.btn-modal-submit:focus {
+    background-color: #404BBF
+}
+
 .icon-label {
     position: absolute;
     top: 4px;
