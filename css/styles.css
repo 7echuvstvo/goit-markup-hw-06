@@ -789,6 +789,11 @@ p {
     background-color: #404BBF
 }
 
+.btn-footer-submit:hover,
+.btn-footer-submit:focus {
+    background-color: #404BBF
+}
+
 .icon-label {
     position: absolute;
     top: 4px;
