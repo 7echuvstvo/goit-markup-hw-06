@@ -18,6 +18,7 @@
 
 <body>
     <div>
+        <!-- HEADER -->
         <header class="header-section">
             <div class="flex-block container">
                 <nav class="nav-section">
@@ -324,15 +325,15 @@
         <!-- FOOTER -->
         <footer class="footer-section">
             <div class="footer-box container">
-                <div class="footer-left-box"><a href="./index.html" class="logo-footer link">Web<span
+                <div class="footer-left-section"><a href="./index.html" class="logo-footer link">Web<span
                             class="accent-logo-footer">Studio</span></a>
                     <p class="footer-description">Increase the flow of customers and sales for your business with
                         digital
                         marketing
                         & growth solutions.</p>
                 </div>
-                <div>
-                    <p class="footer-title-social">Social media</p>
+                <div class="footer-social-section">
+                    <p class="footer-title">Social media</p>
                     <ul class="list footer-social-list">
                         <li class="footer-social-item">
                             <a href="" class="footer-social-link">
@@ -363,18 +364,68 @@
                         </li>
                     </ul>
                 </div>
+                <form class="subscribe-section">
+                    <p class="footer-title">Subscribe</p>
+                    <label class="footer-label">
+                        <input type="text" name="email" class="footer-input">
+                        <span class="footer-email">E-mail</span>
+                    </label>
+                    <button type="submit" class="btn-footer-submit">
+                        <svg class="submit-icon" width="24" height="24">
+                            <use href="./images/icons.svg#send"></use>
+                        </svg> Subscribe</button>
+                </form>
             </div>
         </footer>
-        <div></div>
     </div>
+    <!-- MODAL WINDOW -->
     <div data-modal class="modal-contaner is-hidden">
-        <div class="modal-window">
+        <form class="modal-window">
             <button type="button" data-modal-close class="btn-close">
                 <svg class="icon-close" width="8" height="8">
-                    <use href="./images/icons.svg#cross"></use>
+                    <use href="./images/icons.svg#close-icon"></use>
                 </svg>
             </button>
-        </div>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+
+            <ul class="footer-input-container">
+                <li role="group" class="form-field">
+                    <input type="text" name="user-name" id="user-name" placeholder=" " class="form-input">
+                    <label for="user-name" class="form-label">Name</label>
+                    <svg class="icon-label" width="24" height="24">
+                        <use href="./images/icons.svg#user-icon"></use>
+                    </svg>
+                </li>
+                <li class="form-field">
+                    <input type="text" name="tel" id="tel" placeholder=" " class="form-input">
+                    <label for="tel" class="form-label">Phone</label>
+                    <svg class="icon-label" width="24" height="24">
+                        <use href="./images/icons.svg#phone-icon"></use>
+                    </svg>
+                </li>
+                <li class="form-field">
+                    <input type="text" name="email" id="email" placeholder=" " class="form-input">
+                    <label for="email" class="form-label">Email</label>
+                    <svg class="icon-label" width="24" height="24">
+                        <use href="./images/icons.svg#email-icon"></use>
+                    </svg>
+                </li>
+                <li class="form-field">
+                    <textarea name="Comment" id="comment" rows="10" placeholder="Text input"
+                        class="comment-input"></textarea>
+                    <label for="comment" class="comment-label">Comment</label>
+                </li>
+            </ul>
+
+            <div class="agreement">
+                <input type="checkbox" name="accept-form">
+                <label for="accept-form" class="accept-form">
+                    I accept the terms and conditions of the<span><a href="">Privacy Policy</a></span>
+                </label>
+            </div>
+            <button type="submit" class="btn-modal-submit">Send</button>
+
+        </form>
     </div>
     <script src="./js/modal.js"></script>
 </body>
